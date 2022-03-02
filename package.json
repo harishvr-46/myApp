@@ -1,7 +1,7 @@
 {
   "name": "dhi-electron",
-  "version": "1.1.1",
-  "description": "The Demo App.",
+  "version": "1.1.2",
+  "description": "The Demo App. Updated version.",
   "main": "public/main.js",
   "scripts": {
     "start": "electron .",
