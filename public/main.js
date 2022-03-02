@@ -42,23 +42,25 @@ ipcMain.on('app_version', (event) => {
     event.sender.send('app_version', { version: app.getVersion() });
 });
 
-autoUpdater.on('update-available', () => {
-  mainWindow.webContents.send('update_available');
-  var NOTIFICATION_TITLE = `Update is available. Downloading now. Download speed: " + ${progressObj.bytesPerSecond}`
-  var NOTIFICATION_BODY = `Downloaded ${progressObj.percent}% \n ${origressObj.transferred}/${progressObj.total}`
-  notification = new Notification({
-    title: NOTIFICATION_TITLE,
-    body: NOTIFICATION_BODY,
-    timeoutType: 'never',
-    icon: path.join(__dirname, '/logo.ico')
-  });
+setInterval(() => {
+  autoUpdater.on('update-available', (progressObj) => {
+    mainWindow.webContents.send('update_available');
+    var NOTIFICATION_TITLE = `Update is available. Downloading now. Download speed: " + ${progressObj.bytesPerSecond}`
+    var NOTIFICATION_BODY = `Downloaded ${progressObj.percent}% \n ${progressObj.transferred}/${progressObj.total}`
+    notification = new Notification({
+      title: NOTIFICATION_TITLE,
+      body: NOTIFICATION_BODY,
+      timeoutType: 'default',
+      icon: path.join(__dirname, '/logo.ico')
+    });
+    notification.show();
+    // let log_message = "Download speed: " + progressObj.bytesPerSecond;
+    // log_message = log_message + ' - Downloaded ' + progressObj.percent + '%';
+    // log_message = log_message + ' (' + progressObj.transferred + "/" + progressObj.total + ')';
+  
+  })
+}, 10000);
 
-  notification.show();
-  // let log_message = "Download speed: " + progressObj.bytesPerSecond;
-  // log_message = log_message + ' - Downloaded ' + progressObj.percent + '%';
-  // log_message = log_message + ' (' + progressObj.transferred + "/" + progressObj.total + ')';
-
-})
 
 
 autoUpdater.on('update-downloaded', () => {

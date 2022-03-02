@@ -28,7 +28,10 @@
 </head>
 <body style="background-color: black;" class="text-light">
 
-  <h1>Welcome To DHI. Update details should be shown in notification panel.</h1>
+  <h1>Welcome To DHI.</h1>
+  <p class="text-center text-primary display-4">
+    SART
+  </p>
   <p id="version" style="font-size: xx-large;"></p>
   <div id="notification" class="hidden">
     <p id="message"></p>
@@ -58,9 +61,9 @@
         version.innerText = 'Version ' + arg.version;
     });
 
-    ipcRenderer.on('update_available', () => {
+    ipcRenderer.on('update_available', (progressObj) => {
         ipcRenderer.removeAllListeners('update_available');
-        message.innerText = 'A new update is available. Downloading now...';
+        // message.innerText = `A new update is available. Downloading ${progressObj.bytesPerSecond} \n Downloaded ${progressObj.percent}% \n ${progressObj.transferred}/${progressObj.total}`;
         notification.classList.remove('hidden');
     });
     
