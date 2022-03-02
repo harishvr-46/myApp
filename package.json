@@ -1,7 +1,7 @@
 {
-  "name": "electron-builder-auto-updater-demo",
-  "version": "1.1.0",
-  "description": "",
+  "name": "dhi-electron",
+  "version": "1.1.1",
+  "description": "This is the demo App. Created to distribute and update an app.",
   "main": "public/main.js",
   "scripts": {
     "start": "electron .",
