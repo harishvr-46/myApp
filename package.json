@@ -1,7 +1,6 @@
 {
   "name": "dhi-electron",
-  "version": "1.1.4",
-  "icon": "logo.ico",
+  "version": "1.2.5",
   "description": "The Demo App. Updated version.",
   "main": "public/main.js",
   "scripts": {
