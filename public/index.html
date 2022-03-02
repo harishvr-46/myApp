@@ -2,7 +2,6 @@
 <head>
   <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
   <title>DHI ELECTRON</title>
   <style>
     body {
@@ -10,8 +9,8 @@
         margin: 0;
         padding: 20px;
         font-family: sans-serif;
-        background-color: #eaeaea;
         text-align: center;
+        
     }
     #notification {
         position: fixed;
@@ -20,7 +19,6 @@
         width: 200px;
         padding: 20px;
         border-radius: 5px;
-        background-color: white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
     .hidden {
@@ -32,7 +30,7 @@
 <body style="background-color: black;" class="text-light">
 
 
-  <h1>Electron Auto Update Example, Built and tested by DHI. Bangalore.</h1>
+  <h1>Welcome To DHI</h1>
   <p id="version" style="font-size: xx-large;"></p>
   <div id="notification" class="hidden">
     <p id="message"></p>
@@ -83,16 +81,6 @@
       
       <p><strong style="font-size:18px; font-weight: 1200; color:blueviolet;">Self-Discipline: </strong>Sustain through continuous training & Self Discipline. <strong>Make 5s as a culture.</strong></p>
   </div>
-
-
-
-
-
-
-
-
-
-
 
   <script>
     const { ipcRenderer } = require('electron');
