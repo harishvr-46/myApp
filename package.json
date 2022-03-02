@@ -1,0 +1,24 @@
+{
+  "name": "electron-builder-auto-updater-demo",
+  "version": "1.0.9",
+  "description": "",
+  "main": "public/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --win --publish=never",
+    "deploy": "electron-builder build --win --publish=always"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.2.1",
+    "electron-builder": "^22.11.7"
+  },
+  "dependencies": {
+    "electron-updater": "^4.3.9"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/harishvr-46/myApp.git" 
+  }
+}
