@@ -1,8 +1,8 @@
-const { app, BrowserWindow, ipcMain, Notification } = require('electron');
+const { app, BrowserWindow, ipcMain, Notification, dialog } = require('electron');
 const { autoUpdater } = require('electron-updater');
 const path = require('path');
-let mainWindow;
 
+let mainWindow;
 function createWindow () {
   mainWindow = new BrowserWindow({
     width: 800,
@@ -21,17 +21,14 @@ function createWindow () {
     autoUpdater.checkForUpdatesAndNotify();
   })
 }
-
 app.on('ready', () => {
   createWindow();
 });
-
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') {
     app.quit();
   }
 });
-
 app.on('activate', function () {
   if (mainWindow === null) {
     createWindow();
@@ -42,31 +39,39 @@ ipcMain.on('app_version', (event) => {
     event.sender.send('app_version', { version: app.getVersion() });
 });
 
-setInterval(() => {
-  autoUpdater.on('update-available', (progressObj) => {
+setInterval(() => {  
+  autoUpdater.on('update-available', () => {
     mainWindow.webContents.send('update_available');
-    var NOTIFICATION_TITLE = `Update is available. Downloading now. Download speed: " + ${progressObj.bytesPerSecond}`
-    var NOTIFICATION_BODY = `Downloaded ${progressObj.percent}% \n ${progressObj.transferred}/${progressObj.total}`
-    notification = new Notification({
+    var NOTIFICATION_TITLE = `New version is available.`
+    var NOTIFICATION_BODY = `App will be downloaded Automatically.`
+    availableNotification = new Notification({
       title: NOTIFICATION_TITLE,
       body: NOTIFICATION_BODY,
       timeoutType: 'default',
       icon: path.join(__dirname, '/logo.ico')
     });
-    notification.show();
-    // let log_message = "Download speed: " + progressObj.bytesPerSecond;
-    // log_message = log_message + ' - Downloaded ' + progressObj.percent + '%';
-    // log_message = log_message + ' (' + progressObj.transferred + "/" + progressObj.total + ')';
-  
+    availableNotification.show();
   })
 }, 10000);
 
 
-
 autoUpdater.on('update-downloaded', () => {
-  mainWindow.webContents.send('update_downloaded');
+  var options = {
+    type: 'question',
+    buttons: ['OK', 'No'],
+    title: 'Confirm Install',
+    // normalizeAccessKeys: true,
+    message: 'Update is downloaded. Do you want to Update Now?'
+};
+  const win = BrowserWindow.getFocusedWindow();
+  dialog.showMessageBox(win, options)
+    .then((choice) => {
+        if (choice.response === 0) {
+            autoUpdater.quitAndInstall()
+        }else{
+          message= `Update will automatically installed on next start.`;
+        }
+    }).catch(err => {
+        console.log('ERROR', err);
+    });
 }) 
-
-ipcMain.on('restart_app', () => {
-  autoUpdater.quitAndInstall();
-})

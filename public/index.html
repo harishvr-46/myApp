@@ -1,94 +1,126 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
   <title>DHI ELECTRON</title>
   <style>
     body {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 20px;
-        font-family: sans-serif;
-        text-align: center;
-        
+      box-sizing: border-box;
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+      text-align: center;
     }
-    #notification {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        width: 200px;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    .hidden {
-        display: none;
+
+    .card{
+      margin-top: 10px;
     }
   </style>
 </head>
+
 <body style="background-color: black;" class="text-light">
 
-  <h1>Welcome To DHI.</h1>
-  <p class="text-center text-primary display-4">
-    SART
-  </p>
-  <p id="version" style="font-size: xx-large;"></p>
-  <div id="notification" class="hidden">
-    <p id="message"></p>
-    <button id="close-button" onClick="closeNotification()">
-      Close
-    </button>
-    <button id="restart-button" onClick="restartApp()" class="hidden">
-      Restart
-    </button>
+  <div class="container">
+    <h3 class="text-center">WELCOME TO DHI</h3>
+    <p id="version"></p>
   </div>
 
+  <!-- DHI 5s begining-->
+  <div class="container-fluid my-0 " style="font-family: 'Arvo', serif;">
+    <h1 class="text-center text-light" style="font-weight: 600;">5's Pledge</h1>
+    <h2 class="text-center text-success">I as an Employee of DHI, will maintain my workplace in an organized manner by:</h2>
+    <ul class="d-flex justify-content-around text-danger my-0" style="font-weight: 600; ">
+      <p>
+        1. Segregating and setting things in Place
+      </p>
+      <p>
+        2. Keeping my workplace neat & clean
+      </p>
+      <p>
+        3. Following the standards for sustaining the work culture
+      </p>
+    </ul>
 
+    <ul class="text-justify">
+      <p class="text-warning my-0"><span class="" style="font-size: 17px; font-weight: 900;">DHI MISSION : &nbsp; </span><span class="text-danger" style="font-weight: 600; font-size: 22px;">Enabling Informed Decisions.</span> </p>
+      <p class="text-warning my-0"><span class="" style="font-weight: 900; font-size: 17px;">DHI VISION : </span><span class="text-danger" style="font-weight: 600; font-size: 22px;">DHI Stands for excellence practices across stakeholders towards achieving 'Finestructured Constant'.</span> </p>
+      </ul>
+    <h3 class="text-center text-light">What is 5S?</h3>
+  </div>
+
+  <div class="container-fluid" style="font-family: 'Manrope', sans-serif;">
+    <div class="row d-flex justify-content-around">
+
+      <div class="card" style="width: 14rem;">
+        <div class="card-body">
+          <h5 class="card-title text-danger" style="font-weight: 1000;">Sort</h5>
+          <p class="card-text text-primary" style="font-weight: 800"> To remove what is not needed and keep
+            only what is needed.</p>
+          <p class="card-text text-primary" style="font-weight: 600">Question why we accumulated so much for so many
+            days.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 14rem;">
+        <div class="card-body">
+          <h5 class="card-title text-danger" style="font-weight: 1000;">Set In Order</h5>
+          <p class="card-text text-primary"  style="font-weight: 800">Place for everything and everything in its place. Identification and labelling.</p>
+          <p class="card-text text-primary"  style="font-weight: 600">Keep only minimum quantity at the point of
+            use.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 14rem;">
+        <div class="card-body">
+          <h5 class="card-title text-danger" style="font-weight: 1000;">Shine</h5>
+          <p class="card-text text-primary"  style="font-weight: 800">Keep things clean and polished. No trash or dirt in the workplace.</p>
+          <p class="card-text text-primary"  style="font-weight: 600">Don't clean, keep it clean.......Cleaning with meaning.</p>
+        </div>
+      </div>
+
+            
+      <div class="card" style="width: 14rem;">
+        <div class="card-body">
+          <h5 class="card-title text-danger" style="font-weight: 1000;">Standardize</h5>
+          <p class="card-text text-primary" style="font-weight: 800;">Establish Standards for 1st 3S(1S, 2S, 3S). </p>
+          <p class="card-text text-primary" style="font-weight: 600;"> Use visual methods to expose waste and abnormalities.</p>
+        </div>
+      </div>
+
+            
+      <div class="card" style="width: 14rem;">
+        <div class="card-body">
+          <h5 class="card-title text-danger" style="font-weight: 1000;">Self-Discipline</h5>
+          <p class="card-text text-primary" style="font-weight: 800;">Sustain through continuous training & Self Discipline.</p>
+          <p class="card-text text-primary" style="font-weight: 600;">Make 5s as a culture.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
   <script>
     const { ipcRenderer } = require('electron');
     const version = document.getElementById('version');
-    const notification = document.getElementById('notification');
-    const message = document.getElementById('message');
-    const restartButton = document.getElementById('restart-button');
-    
     ipcRenderer.send('app_version');
-    
     ipcRenderer.on('app_version', (event, arg) => {
-        ipcRenderer.removeAllListeners('app_version');
-        version.innerText = 'Version ' + arg.version;
+      ipcRenderer.removeAllListeners('app_version');
+      version.innerText = 'Version ' + arg.version;
     });
-
-    ipcRenderer.on('update_available', (progressObj) => {
-        ipcRenderer.removeAllListeners('update_available');
-        // message.innerText = `A new update is available. Downloading ${progressObj.bytesPerSecond} \n Downloaded ${progressObj.percent}% \n ${progressObj.transferred}/${progressObj.total}`;
-        notification.classList.remove('hidden');
-    });
-    
-    ipcRenderer.on('update_downloaded', () => {
-        ipcRenderer.removeAllListeners('update_downloaded');
-        message.innerText = 'Update Downloaded. It will be installed on restart. Restart now?';
-        restartButton.classList.remove('hidden');
-        notification.classList.remove('hidden');
-    });
-
-    function closeNotification() {
-        notification.classList.add('hidden');
-    }
-
-    function restartApp() {
-        ipcRenderer.send('restart_app');
-    }
-    //test
   </script>
 
+  <script src="../bootstrap/jquery-3.3.1.slim.min.js"></script>
+  <script src="../bootstrap/popper.min.js"></script>
+  <script src="../bootstrap/bootstrap.min.js"></script>
 
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
+</html>

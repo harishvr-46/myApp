@@ -1,6 +1,6 @@
 {
   "name": "dhi-electron",
-  "version": "1.2.18",
+  "version": "1.2.66",
   "description": "The Demo App. Updated version. Notification showing the update details.",
   "main": "public/main.js",
   "scripts": {
@@ -20,11 +20,12 @@
   "build": {
     "appId": "dhi-app",
     "win": {
-      "target": ["nsis"]
+      "target": [
+        "nsis"
+      ]
     },
-    "nsis":{
+    "nsis": {
       "oneClick": false,
-      "perMachine": true,
       "installerIcon": "logo.ico",
       "uninstallerIcon": "logo.ico",
       "uninstallDisplayName": "dhi-app uninstaller",
@@ -33,7 +34,7 @@
     }
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/harishvr-46/myApp.git" 
+    "type": "git",
+    "url": "https://github.com/harishvr-46/myApp.git"
   }
 }
