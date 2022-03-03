@@ -23,6 +23,18 @@ function createWindow () {
 }
 app.on('ready', () => {
   createWindow();
+  autoUpdater.on('update-available', () => {
+    mainWindow.webContents.send('update_available');
+    var NOTIFICATION_TITLE = `New version is available.`
+    var NOTIFICATION_BODY = `App will be downloaded Automatically.`
+    availableNotification = new Notification({
+      title: NOTIFICATION_TITLE,
+      body: NOTIFICATION_BODY,
+      timeoutType: 'default',
+      icon: path.join(__dirname, '/logo.ico')
+    });
+    availableNotification.show();
+  })
 });
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') {
@@ -39,18 +51,6 @@ ipcMain.on('app_version', (event) => {
     event.sender.send('app_version', { version: app.getVersion() });
 });
 
-  autoUpdater.on('update-available', () => {
-    mainWindow.webContents.send('update_available');
-    var NOTIFICATION_TITLE = `New version is available.`
-    var NOTIFICATION_BODY = `App will be downloaded Automatically.`
-    availableNotification = new Notification({
-      title: NOTIFICATION_TITLE,
-      body: NOTIFICATION_BODY,
-      timeoutType: 'default',
-      icon: path.join(__dirname, '/logo.ico')
-    });
-    availableNotification.show();
-  })
 
 
 autoUpdater.on('update-downloaded', () => {
