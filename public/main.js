@@ -39,7 +39,6 @@ ipcMain.on('app_version', (event) => {
     event.sender.send('app_version', { version: app.getVersion() });
 });
 
-setInterval(() => {  
   autoUpdater.on('update-available', () => {
     mainWindow.webContents.send('update_available');
     var NOTIFICATION_TITLE = `New version is available.`
@@ -52,7 +51,6 @@ setInterval(() => {
     });
     availableNotification.show();
   })
-}, 10000);
 
 
 autoUpdater.on('update-downloaded', () => {
