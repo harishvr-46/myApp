@@ -1,20 +1,24 @@
+.main-card{
+    background-color: #C9D6FF;
+    border-radius: 5px;
+}
+
 .flex-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 30px 0;
     flex-wrap: wrap;
-
 }
 .cards{
-    height: 280px;
+    height: 300px;
     width: 15rem;
     background: #C9D6FF;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: -0.5rem -0.5rem #ccc;
+    box-shadow: -0.5rem -0.3rem #C9D6FF;
     margin: 10px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .cards:hover{
@@ -23,7 +27,7 @@
 
 .img-top{
     /* background-color: aqua; */
-    height: 35%;
+    height: 40%;
     margin: 8px;
 }
 
@@ -36,7 +40,7 @@
 
 .content{
     padding: 2px 7px;
-    height: 65%;
+    height: 60%;
 }
 
 .content h4{
