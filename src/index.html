@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>DHI ELECTRON</title>
   <style>
     body {
@@ -22,11 +23,11 @@
     .card{
       margin-top: 10px;
     }
+
   </style>
 </head>
 
-<body style="background-color: black;" class="text-light">
-
+<body>
   <div class="container">
     <h3 class="text-center">WELCOME TO DHI</h3>
     <p id="version"></p>
@@ -34,7 +35,7 @@
 
   <!-- DHI 5s begining-->
   <div class="container-fluid my-0 " style="font-family: 'Arvo', serif;">
-    <h1 class="text-center text-light" style="font-weight: 600;">5's Pledge</h1>
+    <h1 class="text-center text-primary" style="font-weight: 600;">5's Pledge</h1>
     <h2 class="text-center text-success">I as an Employee of DHI, will maintain my workplace in an organized manner by:</h2>
     <ul class="d-flex justify-content-around text-danger my-0" style="font-weight: 600; ">
       <p>
@@ -52,55 +53,67 @@
       <p class="text-warning my-0"><span class="" style="font-size: 17px; font-weight: 900;">DHI MISSION : &nbsp; </span><span class="text-danger" style="font-weight: 600; font-size: 22px;">Enabling Informed Decisions.</span> </p>
       <p class="text-warning my-0"><span class="" style="font-weight: 900; font-size: 17px;">DHI VISION : </span><span class="text-danger" style="font-weight: 600; font-size: 22px;">DHI Stands for excellence practices across stakeholders towards achieving 'Finestructured Constant'.</span> </p>
       </ul>
-    <h3 class="text-center text-light">What is 5S?</h3>
+    <h3 class="text-center text-primary ">What is 5S?</h3>
   </div>
 
-  <div class="container-fluid" style="font-family: 'Manrope', sans-serif;">
-    <div class="row d-flex justify-content-around">
 
-      <div class="card" style="width: 14rem;">
-        <div class="card-body">
-          <h5 class="card-title text-danger" style="font-weight: 1000;">Sort</h5>
-          <p class="card-text text-primary" style="font-weight: 800"> To remove what is not needed and keep
-            only what is needed.</p>
-          <p class="card-text text-primary" style="font-weight: 600">Question why we accumulated so much for so many
-            days.</p>
-        </div>
+
+
+  <div class="flex-container">
+    <div class="cards">
+      <div class="img-top">
+        <img src="img/sort.jpg" alt="">
       </div>
-
-      <div class="card" style="width: 14rem;">
-        <div class="card-body">
-          <h5 class="card-title text-danger" style="font-weight: 1000;">Set In Order</h5>
-          <p class="card-text text-primary"  style="font-weight: 800">Place for everything and everything in its place. Identification and labelling.</p>
-          <p class="card-text text-primary"  style="font-weight: 600">Keep only minimum quantity at the point of
-            use.</p>
-        </div>
+      <div class="content">
+        <h4 class="">Sort</h4>
+        <h6>To remove what is not needed and keep only what is needed.</h6>
+        <p>Question why we accumulated so much for so many days.</p>            
       </div>
+    </div>
 
-      <div class="card" style="width: 14rem;">
-        <div class="card-body">
-          <h5 class="card-title text-danger" style="font-weight: 1000;">Shine</h5>
-          <p class="card-text text-primary"  style="font-weight: 800">Keep things clean and polished. No trash or dirt in the workplace.</p>
-          <p class="card-text text-primary"  style="font-weight: 600">Don't clean, keep it clean.......Cleaning with meaning.</p>
-        </div>
+    <div class="cards">
+      <div class="img-top">
+        <img src="img/order.jpg" alt="">
+
       </div>
-
-            
-      <div class="card" style="width: 14rem;">
-        <div class="card-body">
-          <h5 class="card-title text-danger" style="font-weight: 1000;">Standardize</h5>
-          <p class="card-text text-primary" style="font-weight: 800;">Establish Standards for 1st 3S(1S, 2S, 3S). </p>
-          <p class="card-text text-primary" style="font-weight: 600;"> Use visual methods to expose waste and abnormalities.</p>
-        </div>
+      <div class="content">
+        <h4 class="">Set In Order</h4>
+        <h6>Place for everything and everything in its place. Identification and labelling.</h6>
+        <p>Keep only minimum quantity at the point of use.</p>            
       </div>
+    </div>
 
-            
-      <div class="card" style="width: 14rem;">
-        <div class="card-body">
-          <h5 class="card-title text-danger" style="font-weight: 1000;">Self-Discipline</h5>
-          <p class="card-text text-primary" style="font-weight: 800;">Sustain through continuous training & Self Discipline.</p>
-          <p class="card-text text-primary" style="font-weight: 600;">Make 5s as a culture.</p>
-        </div>
+    <div class="cards">
+      <div class="img-top">
+        <img src="img/shine.jpg" alt="">
+
+      </div>
+      <div class="content">
+        <h4 class="">Shine</h4>
+        <h6>Keep things clean and polished. No trash or dirt in the workplace.</h6>
+        <p>Don't clean, keep it clean, Cleaning with meaning.</p>            
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="img-top">
+        <img src="img/standardization.png" alt="">
+      </div>
+      <div class="content">
+        <h4 class="">Standardize</h4>
+        <h6>Establish Standards for 1st 3S(1S, 2S, 3S).</h6>
+        <p>Use visual methods to expose waste and abnormalities.</p>            
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="img-top">
+        <img src="img/discipline.png" alt="">
+      </div>
+      <div class="content">
+        <h4 class="">Self-Discipline</h4>
+        <h6>Sustain through continuous training & Self Discipline.</h6>
+        <p>Make 5s as a culture.</p>            
       </div>
     </div>
   </div>

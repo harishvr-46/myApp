@@ -1,0 +1,58 @@
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+
+}
+.cards{
+    height: 55vh;
+    width: 15rem;
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: -0.5rem -0.5rem #ccc;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.cards:hover{
+
+}
+
+.img-top{
+    /* background-color: aqua; */
+    height: 10rem;
+    margin: 8px;
+}
+
+.img-top img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.content{
+    background-color: rgb(14, 240, 116);
+    padding: 2px 7px;
+
+}
+
+.content h4{
+    text-align: left;
+    font-weight: 900;
+    /* background-color: black; */
+    /* color: white; */
+}
+
+.content h6{
+    text-align: justify;
+    font-weight: 500;
+}
+
+.content p{
+    text-align: justify;
+    font-weight: 200;
+}
