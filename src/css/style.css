@@ -7,7 +7,7 @@
 
 }
 .cards{
-    height: 55vh;
+    height: 60vh;
     width: 15rem;
     background: #C9D6FF;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
@@ -23,7 +23,7 @@
 
 .img-top{
     /* background-color: aqua; */
-    height: 10rem;
+    height: 40%;
     margin: 8px;
 }
 
@@ -36,7 +36,7 @@
 
 .content{
     padding: 2px 7px;
-
+    height: 60%;
 }
 
 .content h4{

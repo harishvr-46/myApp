@@ -1,6 +1,6 @@
 {
   "name": "dhi-electron",
-  "version": "1.2.69",
+  "version": "1.2.70",
   "description": "The Demo App. Updated version. Notification showing the update details.",
   "main": "src/main.js",
   "scripts": {
