@@ -5,14 +5,13 @@ const path = require('path');
 let mainWindow;
 function createWindow () {
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
     icon: "logo.ico",
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false
     },
   });
+  mainWindow.maximize();
   mainWindow.loadURL(`file://${path.join(__dirname, './index.html')}`);
   mainWindow.on('closed', function () {
     mainWindow = null;
