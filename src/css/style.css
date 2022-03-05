@@ -1,8 +1,7 @@
 body{
     color: #FFFFFF;
-    /* background-color: #050418; */
-    background: url('../img/2.jpg') no-repeat center center;
-    background-size: cover;
+    background: url('../img/5.jpg') no-repeat center center;
+    background-size: cover; 
 }
 
 .main-card{
@@ -25,7 +24,7 @@ body{
     width: 15rem;
     margin: 10px;
     border: 2px solid white;
-    border-radius: 5px;
+    border-radius: 20px 5px 20px 5px;
     background-color: rgba(43, 44, 43, 0.2);
 
 
@@ -53,6 +52,7 @@ body{
 
 .content h4{
     text-align: left;
+    color: #0093dd;
     /* font-weight: 900; */
     /* background-color: black; */
     /* color: white; */
@@ -60,7 +60,8 @@ body{
 
 .content h6{
     text-align: justify;
-    color: rgb(202, 197, 207);
+    /* color: rgb(202, 197, 207); */
+    color: #FFFFFF;
 
 
     /* font-weight: 500; */
@@ -68,7 +69,8 @@ body{
 
 .content p{
     text-align: justify;
-    color: rgb(202, 197, 207);
+    /* color: rgb(202, 197, 207); */
+    color: #FFFFFF;
     /* color: #A36147; */
 
     /* font-weight: 200; */

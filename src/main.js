@@ -29,7 +29,7 @@ function tick(){
   var sec = new Date().getSeconds();
   var ampm = hours >= 12 ? 'PM' : 'AM';
 
-  if(hours == 15 || hours == 16){
+  if(hours == 17 || hours == 18){
     console.log("Time to take an Oath");
     showModal = ()=>{
       let modal = new BrowserWindow({show: false})
