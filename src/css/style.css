@@ -31,7 +31,9 @@ body{
 }
 
 .cards:hover{
-
+    background-color: black;
+    color: grey;
+    transition: inset all 2s;
 }
 
 .img-top{

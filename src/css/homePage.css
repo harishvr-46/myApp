@@ -34,6 +34,7 @@ nav{
     border-radius: 15px 4px 15px 4px;
     padding: 10px;
     animation: btn-anim 0.5s;
+    animation-iteration-count: 5;
 }
 
 @keyframes btn-anim {
