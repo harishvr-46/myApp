@@ -1,6 +1,15 @@
+body{
+    color: #FFFFFF;
+    /* background-color: #050418; */
+    background: url('../img/2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
 .main-card{
-    background-color: #C9D6FF;
     border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px solid #98a998;
+    padding: 15px;
 }
 
 .flex-container{
@@ -11,14 +20,15 @@
     flex-wrap: wrap;
 }
 .cards{
-    height: 300px;
+    padding: 10px 10px;
+    height: 200px;
     width: 15rem;
-    background: #C9D6FF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: -0.5rem -0.3rem #C9D6FF;
     margin: 10px;
+    border: 2px solid white;
     border-radius: 5px;
+    background-color: rgba(43, 44, 43, 0.2);
+
+
 }
 
 .cards:hover{
@@ -34,8 +44,6 @@
 .img-top img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    border-radius: 5%;
 }
 
 .content{
@@ -52,10 +60,16 @@
 
 .content h6{
     text-align: justify;
+    color: rgb(202, 197, 207);
+
+
     /* font-weight: 500; */
 }
 
 .content p{
     text-align: justify;
+    color: rgb(202, 197, 207);
+    /* color: #A36147; */
+
     /* font-weight: 200; */
 }

@@ -1,141 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>DHI ELECTRON</title>
-  <style>
-    body {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 20px;
-      font-family: sans-serif;
-      text-align: center;
-    }
-
-    .card{
-      margin-top: 10px;
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/homePage.css">
+    <script src="https://kit.fontawesome.com/9c1cb35186.js" crossorigin="anonymous"></script>
+    <title>Welcome Page</title>
 </head>
-
 <body>
-  <div class="container">
-    <h3 class="text-center">WELCOME TO DHI</h3>
-    <p id="version"></p>
-  </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li> -->
+              </ul>
 
-  <div class="main-card">
-    <!-- DHI 5s begining-->
-    <div class="container-fluid my-0 " style="font-family: 'Arvo', serif;">
-      <h1 class="text-center text-primary" style="font-weight: 600;">5's Pledge</h1>
-      <h4 class="text-center text-success">I as an Employee of DHI, will maintain my workplace in an organized manner by:</h4>
-      <ul class="d-flex justify-content-around text-danger my-0" style="font-weight: 600; ">
-        <p>
-          1. Segregating and setting things in Place
-        </p>
-        <p>
-          2. Keeping my workplace neat & clean
-        </p>
-        <p>
-          3. Following the standards for sustaining the work culture
-        </p>
-      </ul>
-  
-      <ul class="text-justify">
-        <p class="my-0"><span class="" style="font-size: 17px; font-weight: 900;">DHI MISSION : &nbsp; </span><span class="" style="font-weight: 600; font-size: 22px; color: purple;">Enabling Informed Decisions.</span> </p>
-        <p class="my-0"><span class="" style="font-weight: 900; font-size: 17px;">DHI VISION : </span><span class="" style="font-weight: 600; font-size: 22px; color: purple;">DHI Stands for excellence practices across stakeholders towards achieving 'Finestructured Constant'.</span> </p>
-        </ul>
+                
+                <a href="#" class="btn-a" title="Social">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <i class="fa fa-comment fa-2x"></i>
+                </a>
+
+                <a href="#" class="btn-a" title="Profile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <i class="fa fa-user fa-2x"></i>
+                </a>
+            </div>
+          </nav>
+    
+    <div class="container-fluid py-3 m-0">
+        <h1 class="text-center heading">Welcome To DHI Verification</h1>
+        <div class="row">
+            <div class="col-md-6 top-left">
+                <p class="text my-0">
+                    Extending your <br> Verification needs.
+                </p>
+                <p class="subtext">
+                    Facilitating through expertise, <br>  data and network.
+                </p>
+                <p class="smalltext">
+                    From individuals to institution Verification. Team DHI engages through <br> technology, know-how and collaboration for quality and timely delivery.
+                </p>
+                <button class="btn know-more">Learn More</button>
+            </div>
+            <div class="col-md-6 top-right">
+                <img src="img/background-verification.png" alt="">
+            </div>
+        </div>
     </div>
-  </div>
-
-
-
-
-  <h3 class="text-center text-primary ">What is 5S?</h3>
-  <div class="flex-container">
-    <div class="cards">
-      <div class="img-top">
-        <img src="img/sort.jpg" alt="">
-      </div>
-      <div class="content">
-        <h4 class="">Sort</h4>
-        <h6>To remove what is not needed and keep only what is needed.</h6>
-        <p>Question why we accumulated so much for so many days.</p>            
-      </div>
-    </div>
-
-    <div class="cards">
-      <div class="img-top">
-        <img src="img/order.jpg" alt="">
-
-      </div>
-      <div class="content">
-        <h4 class="">Set In Order</h4>
-        <h6>Place for everything and everything in its place. Identification and labelling.</h6>
-        <p>Keep only minimum quantity at the point of use.</p>            
-      </div>
-    </div>
-
-    <div class="cards">
-      <div class="img-top">
-        <img src="img/shine.jpg" alt="">
-
-      </div>
-      <div class="content">
-        <h4 class="">Shine</h4>
-        <h6>Keep things clean and polished. No trash or dirt in the workplace.</h6>
-        <p>Don't clean, keep it clean, Cleaning with meaning.</p>            
-      </div>
-    </div>
-
-    <div class="cards">
-      <div class="img-top">
-        <img src="img/standardization.png" alt="">
-      </div>
-      <div class="content">
-        <h4 class="">Standardize</h4>
-        <h6>Establish Standards for 1st 3S(1S, 2S, 3S).</h6>
-        <p>Use visual methods to expose waste and abnormalities.</p>            
-      </div>
-    </div>
-
-    <div class="cards">
-      <div class="img-top">
-        <img src="img/discipline.png" alt="">
-      </div>
-      <div class="content">
-        <h4 class="">Self-Discipline</h4>
-        <h6>Sustain through continuous training & Self Discipline.</h6>
-        <p>Make 5s as a culture.</p>            
-      </div>
-    </div>
-  </div>
-
-
-
-  <script>
-    const { ipcRenderer } = require('electron');
-    const version = document.getElementById('version');
-    ipcRenderer.send('app_version');
-    ipcRenderer.on('app_version', (event, arg) => {
-      ipcRenderer.removeAllListeners('app_version');
-      version.innerText = 'Version ' + arg.version;
-    });
-  </script>
-
-  <script src="../bootstrap/jquery-3.3.1.slim.min.js"></script>
-  <script src="../bootstrap/popper.min.js"></script>
-  <script src="../bootstrap/bootstrap.min.js"></script>
-
+    <script src="../bootstrap/jquery-3.3.1.slim.min.js"></script>
+    <script src="../bootstrap/popper.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
 </body>
-
 </html>

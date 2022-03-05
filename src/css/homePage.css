@@ -1,0 +1,89 @@
+body{
+    /* background: url('../img/bg1.jpg') no-repeat center center fixed; */
+    /* background-size: cover; */
+}
+
+nav{
+    opacity: 0.8;
+    background-color: black;
+}
+
+.heading{
+    color: #0093dd;
+}
+
+.top-left{
+    margin-top: 15px;
+    min-height: 350px;
+    padding-left: 30px;
+}
+
+.know-more{
+    background-color: #e77817;
+    border-radius: 15px 4px 15px 4px;
+    padding: 10px;
+}
+.know-more:hover{
+    border-radius: 15px 5px 15px 5px;
+    background-color: #0093dd;
+    transition: 0.5s;
+}
+
+.top-right{
+    min-height: 350px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+.top-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.text{
+    font-size: 45px;
+    font-weight: 800;
+    color: rgb(20, 139, 199);
+
+}
+.subtext{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(20, 139, 199);
+}
+
+.smalltext{
+    color: #e77817;
+    font-weight: 500;
+
+}
+
+/* button */
+.btn-a{
+    position: relative;
+    display: inline-block;
+    color: #e77817;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    padding: 4px;
+    margin-right: 20px;
+}
+
+.btn-a:hover{
+    /* background: #00923F; */
+    color: #0093dd;
+    border: 1px solid #e77817;
+    border-radius: 8px 4px 8px 4px;
+}
+.btn-a span{
+    position: absolute;
+    display: block;
+}

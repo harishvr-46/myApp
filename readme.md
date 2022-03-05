@@ -10,6 +10,11 @@
 5. We need better icon image to show.
 6. To change the installation setup, in package.json change the nsis option. 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Features Added
+1. Auto Start App at startup
+2. 
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 --GITHUB--
@@ -18,14 +23,15 @@
 3. git commit -m "custom_message" -------------> to commit the changes
 4. git push ---------------------> To push the changes to the repo
 
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Note: 
 1. To change the repo goto package.json and change the repository url.
 2. Since the repo is public, we should not push our source codes to the repo. i.e. The repo should be used only to publish releases.
 3. To find out the download speed and the app Size and version while downloading this code will help
-      its an event, fired when downloading an app. The progressObj is an API through which we can get speed and size etc.
 
+      its an event, fired when downloading an app. The progressObj is an API through which we can get speed and size etc.
         autoUpdater.on("download-progress", progressObj => {
         let percentile = progressObj.percent;
         let n = percentile.toFixed(1);
