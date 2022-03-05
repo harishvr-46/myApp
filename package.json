@@ -1,6 +1,6 @@
 {
   "name": "dhi-electron",
-  "version": "1.2.81",
+  "version": "1.2.82",
   "description": "The Demo App. Updated version. Notification showing the update details.",
   "main": "src/main.js",
   "scripts": {
@@ -26,11 +26,9 @@
       ]
     },
     "nsis": {
-      "oneClick": true,
       "installerIcon": "logo.ico",
       "uninstallerIcon": "logo.ico",
-      "uninstallDisplayName": "dhi-app uninstaller",
-      "allowToChangeInstallationDirectory": true
+      "uninstallDisplayName": "dhi-app uninstaller"
     }
   },
   "repository": {
