@@ -10,6 +10,17 @@ nav{
 
 .heading{
     color: #0093dd;
+    animation: headerAnim 2s;
+    font-weight: 900;
+}
+@keyframes headerAnim {
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
 }
 
 .top-left{
@@ -22,7 +33,24 @@ nav{
     background-color: #e77817;
     border-radius: 15px 4px 15px 4px;
     padding: 10px;
+    animation: btn-anim 0.5s;
 }
+
+@keyframes btn-anim {
+    0%{
+        transform: translateX(20px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(-7px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
 .know-more:hover{
     border-radius: 15px 5px 15px 5px;
     background-color: #0093dd;
@@ -43,8 +71,18 @@ nav{
     height: 100%;
     width: 100%;
     object-fit: contain;
+    animation: fade-in 3s;
 }
+@keyframes fade-in {
+    0%{
+        opacity: 0.0;
+    }
 
+    100%{
+        opacity: 1;
+    }
+
+}
 .text{
     font-size: 45px;
     font-weight: 800;
@@ -60,7 +98,6 @@ nav{
 .smalltext{
     color: #e77817;
     font-weight: 500;
-
 }
 
 /* button */
@@ -76,6 +113,7 @@ nav{
     padding: 4px;
     margin-right: 20px;
 }
+
 
 .btn-a:hover{
     /* background: #00923F; */
