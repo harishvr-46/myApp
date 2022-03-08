@@ -1,4 +1,0 @@
-appId : com.example.ElectronAutoUpdatedDemo
-publish:
-  provider: github
-  token: '${env.GH_TOKEN}'
